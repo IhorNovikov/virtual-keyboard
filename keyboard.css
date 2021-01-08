@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(./assets/img/main.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  opacity: 0.9;
+}
+
+.display {
+  display: block;
+  width: 60rem;
+  height: calc(100vh - 680px);
+  min-height: 300px;
+  margin: 0 auto;
+  margin-top: 3rem;
+  padding: 5px 0;
+  position: relative;
+  font-size: 30px;
+  color: black;
+  background: lightcyan;
+  border: none;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #719ECE;
+  box-shadow: 0 0 10px #719ECE;
+}
+
+::-webkit-input-placeholder {
+  text-align: center;
+}
+
+:-moz-placeholder {
+  text-align: center;
+}
+
+::-moz-placeholder {
+  text-align: center;
+}
+
+:-ms-input-placeholder {
+  text-align: center;
+}
+
+.keyboard {
+  width: 60rem;
+  bottom: 0;
+  padding: 15px 0;
+  background: lightcyan;
+  user-select: none;
+  transition: bottom 0.4s;
+  margin: 0 auto;
+}
+
+.keyboard-hidden {
+  display: none;
+}
+
+.keyboard-keys {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.key-element {
+  width: 6%;
+  height: 50px;
+  margin: 5px;
+  color: rgba(43, 42, 42, 0.719);
+  font-size: 20px;
+  font-weight: 300;
+  background: lightblue;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  -webkit-box-shadow: 12px 29px 81px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 12px 29px 81px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 12px 29px 81px 0px rgba(0, 0, 0, 0.75);
+}
+
+.key-element:hover {
+  color: rgba(65, 62, 62, 0.849);
+  font-weight: 400;
+  background: rgba(102, 204, 204, 0.5);
+  opacity: 0.8;
+}
+
+.key-element:active {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.key-element-wide {
+  width: 10%;
+  height: 45px;
+  border: 5px solid chartreuse;
+}
+
+.key-element-extra-wide {
+  width: 30%;
+  height: 45px;
+}
+
+.toggle-lang {
+  width: 10%;
+  height: 45px;
+}
+
+.key-active,
+.key-active:hover {
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+}
+
+.key-record-active,
+.key-record-active:hover {
+  background: red;
+  opacity: 0.8;
+}
+
+.key-element-dark {
+  width: 10%;
+  height: 45px;
+  background: rgba(0, 0, 0, 0.25);
+}
