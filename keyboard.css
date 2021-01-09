@@ -37,19 +37,19 @@ textarea:focus {
   box-shadow: 0 0 10px #719ECE;
 }
 
-::-webkit-input-placeholder {
+ ::-webkit-input-placeholder {
   text-align: center;
 }
 
-:-moz-placeholder {
+ :-moz-placeholder {
   text-align: center;
 }
 
-::-moz-placeholder {
+ ::-moz-placeholder {
   text-align: center;
 }
 
-:-ms-input-placeholder {
+ :-ms-input-placeholder {
   text-align: center;
 }
 
@@ -131,4 +131,19 @@ textarea:focus {
   width: 10%;
   height: 45px;
   background: rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (max-width:320px) {
+  .key-element {
+    width: 7.2%;
+    height: 80px;
+    font-size: 40px;
+    margin: 2px;
+  }
+  .key-element-extra-wide {
+    width: 30%;
+  }
+  .toggle-lang {
+    font-size: 25px;
+  }
 }
